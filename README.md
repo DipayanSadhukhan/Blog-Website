@@ -25,7 +25,7 @@ Welcome to my **Blog Website**! This is a responsive and interactive blog platfo
    ```
 2. Open the project folder and run `index.html` in a browser.
 
-## 📸 Screenshots
+## 📸 Screenshot
 ![Blog Website Screenshot](img/ss_blog.png)
 
 ## 📩 Contact
