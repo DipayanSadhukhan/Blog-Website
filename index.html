@@ -8,11 +8,14 @@
     <meta name="description" content="A simple and elegant blog website where users can explore and share blog posts.">
 
     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link rel="stylesheet" href="mode.css">
     <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="carousel-img-set.css">
     <title>Blogs.com</title>
 </head>
 
@@ -27,7 +30,8 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="https://dipayansadhukhan.github.io/Blog-Website/index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="https://dipayansadhukhan.github.io/Blog-Website/index.html">Home <span
+                            class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://dipayansadhukhan.github.io/Blog-Website/about.html">About</a>
@@ -44,33 +48,61 @@
                         <a class="dropdown-item" href="#">Travel</a>
                         <a class="dropdown-item" href="#">Self-improvement</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="https://dipayansadhukhan.github.io/Blog-Website/support.html">Support</a>
+                        <a class="dropdown-item"
+                            href="https://dipayansadhukhan.github.io/Blog-Website/support.html">Support</a>
                         <a class="dropdown-item" href="#">Write for us</a>
+                        <a class="dropdown-item" href="https://dipayansadhukhan.github.io/Blog-Website/contact.html">Contact Us</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://dipayansadhukhan.github.io/Blog-Website/contact.html">Contact Us</a>
+
+                <li class="nav-item d-lg-none">
+                    <button id="login-mobile" class="btn btn-danger btn-block my-2">Login</button>
+                </li>
+                <li class="nav-item d-lg-none">
+                    <button id="signup-mobile" class="btn btn-danger btn-block">SignUp</button>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button id="search-btn" class="btn btn-outline-danger my-2 my-sm-0" type="button">Search</button>
-            </form>
-        </div>
 
-        <div class="mx-2 gap-2">
-            <button id="toggle" class="btn btn-primary">Dark Mode</button>
+            <div class="d-flex align-items-center">
+                <form class="form-inline d-flex">
+                    <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button id="search-btn" class="btn btn-outline-danger my-2 my-sm-0" type="button">Search</button>
+                </form>
 
-            <style>
-                #toggle {
-                    margin: 0 3px;
-                }
-            </style>
-            <button id="login" class="btn btn-danger">Login</button>
-            <button id="signup" class="btn btn-danger">SignUp</button>
+                <button id="toggle" class="btn btn-primary mx-1">Dark Mode</button>
+
+                <div class="d-none d-lg-flex">
+                    <button id="login" class="btn btn-danger mx-2">Login</button>
+                    <button id="signup" class="btn btn-danger">SignUp</button>
+                </div>
+            </div>
         </div>
     </nav>
 
+    <style>
+        /* Ensure Login & Signup buttons have proper spacing */
+        #login,
+        #signup,
+        #login-mobile,
+        #signup-mobile {
+            min-width: 100px;
+        }
+
+        #login {
+            margin-right: 10px;
+        }
+
+        /* Search button should not be squeezed */
+        #search-btn {
+            min-width: 90px;
+        }
+
+        /* Align buttons properly */
+        .d-flex {
+            align-items: center;
+        }
+    </style>
 
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -81,28 +113,42 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="pics/pic1.avif" class="d-block w-100" alt="Slide 1">
+                <img src="pics/pic1.jpg" class="d-block w-100" alt="Slide 1">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Welcome to the World of Blogs</h2>
                     <p>Everything in one place - Tech, Health, Awareness, etc.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="pics/pic4.avif" class="d-block w-100" alt="Slide 2">
+                <img src="pics/pic1.avif" class="d-block w-100" alt="Slide 2">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Second Slide Label</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="pics/pics3.avif" class="d-block w-100" alt="Slide 3">
+                <img src="pics/pic4 (3).jpg" class="d-block w-100" alt="Slide 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second Slide Label</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="pics/pic4 (4).jpg" class="d-block w-100" alt="Slide 4">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second Slide Label</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="pics/pics3.avif" class="d-block w-100" alt="Slide 5">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Third Slide Label</h5>
                     <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="pics/pic2.avif" class="d-block w-100" alt="Slide 4">
+                <img src="pics/pic2.avif" class="d-block w-100" alt="Slide 6">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Fourth Slide Label</h5>
                     <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -140,7 +186,7 @@
                         <a href="#" class="stretched-link">Continue reading</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img src="pics/p11.avif" width="200" height="250" class="img-fluid -webkit-fit-available"
+                        <img src="pics/p1.avif" width="200" height="250" class="img-fluid -webkit-fit-available"
                             alt="Blog Image">
                     </div>
                 </div>
@@ -271,37 +317,24 @@
         <div class="card text-center">
             <div class="card-body">
                 <h6 class="card-title">Stay Inspired, Stay Informed</h6>
-                <p class="card-text">Explore insightful articles, tech trends, and personal experiences. Keep learning, keep growing!</p>
-                <a href="https://dipayansadhukhan.github.io/Blog-Website/index.html" class="btn btn-danger">Go to Top</a>
+                <p class="card-text">Explore insightful articles, tech trends, and personal experiences. Keep learning,
+                    keep growing!</p>
+                <a href="https://dipayansadhukhan.github.io/Blog-Website/index.html" class="btn btn-danger">Go to
+                    Top</a>
             </div>
         </div>
     </div>
 
-    
-    
+
+
     <style>
-        .carousel-inner img {
-            width: 100%;
-            height: 690px;
-            object-fit: cover;
-        }
-        
-        .carousel-fade .carousel-item {
-            transition: opacity 0.4s ease-in-out;
-            opacity: 0;
-        }
-        
-        .carousel-fade .carousel-item.active {
-            opacity: 1;
-        }
-        
         .card-hover img {
             width: revert-layer;
             height: 250px !important;
             object-fit: cover;
             border-radius: 5px;
         }
-        </style>
+    </style>
 
     <script src="login.js"></script>
     <script src="signup.js"></script>
@@ -309,7 +342,9 @@
     <script src="search.js"></script>
 
 
-
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
