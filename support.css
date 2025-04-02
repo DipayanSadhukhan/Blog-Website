@@ -1,0 +1,127 @@
+.pagebox{
+    margin: 1rem;
+}
+.pagebox h1{
+    border-bottom:2px solid rgba(128, 128, 128, 0.631) ;
+    font-weight: 600;
+    margin-top: 5rem;
+}
+
+.dark-mode .pagebox h1{
+    border-bottom:2px solid orange ;
+}
+
+.pagebox h3{
+    margin-top: 3rem;
+}
+
+.pagebox p{
+    margin-top: 10px;
+}
+
+.makebox{
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    border-radius: 30px;
+
+}
+.dark-mode .makebox{
+    color: white;
+    background-color:darkslategrey;
+}
+
+@media (max-width:800px){
+    .makebox{
+        display: block;
+        padding: 1.5rem;
+        border-radius: 10px;
+    }
+}
+
+.box{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 3rem;
+}
+.box h2{
+    font-weight: 600;
+}
+
+.box1,
+.box2,
+.box3{
+    flex: 1;
+}
+
+.box2{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+.box2 h2 {
+    display: inline-block;
+    position: relative;
+}
+
+.box2 h2:hover{
+    border-bottom: 0.1em solid red;
+    scale: 1.07;
+}
+
+#follow{
+    margin: 0;
+}
+
+.social-links{
+    margin-bottom: 0;
+}
+
+.box2 .social{
+    display: flex;
+    flex-direction: column;
+}
+
+.social{
+    margin-left: 6rem;
+}
+
+.social:hover{
+    scale: 1.07;
+}
+
+@media (max-width:750px){
+    .box{
+        display: block;
+        padding: 2rem;
+    }
+
+    .box2{
+        display: block;
+    }
+    .dark-mode .box2,
+    .dark-mode .box3{
+        border-top: 2px solid #333;
+        width: 100%;
+    }
+    .dark-mode .box2 h2,
+    .dark-mode .box3 h2{
+        margin-top: 10px;
+    }
+
+}
+
+
+.dark-mode .box{
+    color: white;
+    background-color: rgb(28, 32, 31);
+}
+
+.footer{
+    margin-top: 5rem;
+}

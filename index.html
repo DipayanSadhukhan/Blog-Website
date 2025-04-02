@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A simple and elegant blog website where users can explore and share blog posts.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="mode.css">
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="navstyle.css">
+    <link rel="stylesheet" href="carousel-img-set.css">
+    
+    <title>Blogs.com</title>
+</head>
+
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">BLOGS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categories
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Technology</a>
+                        <a class="dropdown-item" href="#">Health</a>
+                        <a class="dropdown-item" href="#">Business</a>
+                        <a class="dropdown-item" href="#">Travel</a>
+                        <a class="dropdown-item" href="#">Self-improvement</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item"
+                            href="/support.html">Support</a>
+                        <a class="dropdown-item" href="/writeforus.html">Write for us</a>
+                        <a class="dropdown-item" href="/contact.html">Contact Us</a>
+                    </div>
+                </li>
+
+                <li class="nav-item d-lg-none">
+                    <button id="login-mobile" class="btn btn-danger btn-block my-2">Login</button>
+                </li>
+                <li class="nav-item d-lg-none">
+                    <button id="signup-mobile" class="btn btn-danger btn-block">SignUp</button>
+                </li>
+            </ul>
+
+            <div class="d-flex align-items-center" style="margin: 8px 0">
+                <form class="d-flex">
+                    <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button id="search-btn" class="btn btn-outline-danger my-2 my-sm-0" type="button">Search</button>
+                </form>
+
+                <button id="toggle" class="btn btn-primary mx-1">Dark Mode</button>
+
+                <div class="d-none d-lg-flex">
+                    <button id="login" class="btn btn-danger mx-2">Login</button>
+                    <button id="signup" class="btn btn-danger">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="1" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="pics/welcome1.jpeg" class="d-block w-100" alt="Slide 1">
+                <div id="active" class="carousel-caption d-none d-md-block">
+                    <h2>The World of Blogs</h2>
+                    <p>Everything in one place - Tech, Health, Awareness, etc.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="pics/pic1.avif" class="d-block w-100" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>One who Passionate</h2>
+                    <p>Passionate people turn dreams into reality with relentless dedication and energy</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="pics/together.jpeg" class="d-block w-100" alt="Slide 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Team Work</h2>
+                    <p>Teamwork is the ability to work together toward a common goal, leveraging collective strengths for greater success.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="pics/pic4 (4).jpg" class="d-block w-100" alt="Slide 4">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Discover Yourself</h2>
+                    <p>Discovering yourself is a journey of self-exploration, understanding your strengths, passions, and purpose to unlock your true potential.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="pics/pics3.avif" class="d-block w-100" alt="Slide 5">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Early Buds</h2>
+                    <p>Early morning is a fresh start, a quiet moment of peace and possibility before the world awakens</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="pics/library.jpeg" class="d-block w-100" alt="Slide 6">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>A Friend</h2>
+                    <p>It is a treasure trove of knowledge, where wisdom from the past meets the curiosity of the present.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div id="trend" class="container my-5">
+        <h2 id="Text">Trending</h2>
+        <style>
+            #Text {
+                margin: 20px;
+                margin-left: 0;
+            }
+        </style>
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative card-hover">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">World</strong>
+                        <h3 class="mb-0"> Edge Computing </h3>
+                        <div class="mb-1 text-muted">just now</div>
+                        <p class="card-text mb-auto">Edge computing is gaining prominence by processing data closer to its source, reducing latency and bandwidth usage.</p>
+                        <a href="/edgecom.html" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="pics/edge.jpeg" width="200" height="250" class="img-fluid -webkit-fit-available"
+                            alt="Blog Image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative card-hover">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Design</strong>
+                        <h3 class="mb-0">AI-Powered Design</h3>
+                        <div class="mb-1 text-muted">just now</div>
+                        <p class="mb-auto">The Artificial intelligence is revolutionizing design processes by automating tasks and offering new creative possibilities.</p>
+                        <a href="/aidesign.html" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="img/new3.png" width="200" height="250" class="img-fluid -webkit-fit-available"
+                            alt="Blog Image">
+                    </div>
+                    <style>
+                        .mb-0{
+                            white-space: nowrap;
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .card-hover {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .card-hover:hover {
+            transform: scale(1.02);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+
+
+    <style>
+        .card-hover {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card-hover:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-img-top {
+            object-fit: cover;
+            width: 100%;
+            height: 200px;
+        }
+    </style>
+
+
+
+    <div class="container my-5">
+        <h2 id="text">Recent Articles</h2>
+        <style>
+            #text {
+                margin: 20px;
+                margin-left: 0;
+            }
+        </style>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100 card-hover">
+                    <img src="img/tech&ai.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">"Tech & AI"</h5>
+                        <p class="card-text">The Rise of AI-Powered Chatbots in 2025<br>Chatbots are getting smarter! Discover how AI-driven virtual assistants are transforming customer service, automation, and user experience.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100 card-hover">
+                    <img src="pics/Personal Growth & Productivity.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">"Personal Growth & Productivity"</h5>
+                        <p class="card-text"> Time Management Hacks for College Students<br> Struggling to balance studies and social life? Check out these practical tips to stay productive without feeling overwhelmed.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 8 mins ago</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100 card-hover">
+                    <img src="img/Finance & Career.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">"Finance & Career"</h5>
+                        <p class="card-text">How to Start Investing as a College Student<br>A beginner’s guide to stocks, crypto, and passive income strategies for students.<br>Freelancing vs. Full-Time Jobs: Pros & Cons .</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 1 mins ago</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100 card-hover">
+                    <img src="img/metaverse.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">"Metaverse"</h5>
+                        <p class="card-text">The metaverse is a concept for a persistent, shared, and immersive digital world.<br>It is a persistent, interconnected, 3D virtual world where people can interact with each other and digital objects.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 1 hours ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="card text-center">
+            <div class="card-body">
+                <h6 class="card-title">Stay Inspired, Stay Informed</h6>
+                <p class="card-text">Explore insightful articles, tech trends, and personal experiences. Keep learning,
+                    keep growing!</p>
+                <a href="/index.html" class="btn btn-danger">Go to
+                    Top</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <style>
+        .card-hover img {
+            width: revert-layer;
+            height: 250px !important;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    </style>
+
+    <script src="login.js"></script>
+    <script src="signup.js"></script>
+    <script src="mode.js"></script>
+    <script src="search.js"></script>
+    <script src="mobile.js"></script>
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

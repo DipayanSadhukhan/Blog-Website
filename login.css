@@ -1,0 +1,33 @@
+.form-container {
+    max-width: 600px;
+    padding: 2rem !important;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#bottom {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 20rem ;
+}
+
+.btnclass{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width: 600px){
+    .container{
+        font-size: 10px;
+    }
+
+    .form-container{
+        max-width: 350px;
+        margin-top: 0;
+    }
+    #boxx{
+        margin: 5rem 0;
+    }
+}

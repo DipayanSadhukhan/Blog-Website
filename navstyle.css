@@ -1,0 +1,35 @@
+#login,
+#signup,
+#login-mobile,
+#signup-mobile {
+    min-width: 100px;
+}
+
+#navbar{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    margin: 0;
+}
+
+#login {
+    margin-left: 5px !important;
+}
+
+#search-btn {
+    min-width: 90px;
+}
+
+.d-flex{
+    align-items: center;
+}
+
+#toggle{
+    margin-left: 7px !important;
+}
+
+#search-btn,
+#toggle {
+    white-space: nowrap;
+}

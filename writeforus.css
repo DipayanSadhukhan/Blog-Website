@@ -1,0 +1,85 @@
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 3rem 0rem;
+    white-space: nowrap;
+}
+
+
+.small {
+margin: 8rem 0;
+padding: 0rem 5rem;
+padding-bottom: 35px;
+background-color: bisque;
+border-radius: 15px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+font-size: 100%;
+}
+
+@media (max-width: 650px){
+
+h2{
+    font-size: 22px;
+    font-weight: 600;
+    padding: 3rem 0;
+    padding-bottom: 1rem;
+}
+
+.small {
+    padding: 1rem;
+}
+
+#exampleFormControlTextarea1{
+    height: 140px;
+}
+}
+#formFileMultiple {
+    width: 50%;
+}
+
+.small button {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 5px;
+    margin-top: 15px;
+}
+
+#foott {
+    white-space: nowrap;
+}
+
+@media (width:1000px)and(min-width:650px){
+    h2{
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 4rem 0;
+    padding-bottom: 1rem;
+    }
+
+    .container{
+        font-size: 16px;
+    }
+    .mb-3 .btn{
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width:650px){
+    .container{
+        font-size: 13px;
+    }
+
+    #ff{
+        font-size: 10px;
+        margin-top: 15rem;
+    }
+
+    .mb-3 .btn{
+        font-size: 13px;
+        padding: 6px;
+
+    }
+}

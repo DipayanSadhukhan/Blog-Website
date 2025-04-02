@@ -1,0 +1,45 @@
+body {
+    background-color: #fff !important;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s !important;
+}
+body.dark-mode {
+    background-color: #333 !important;
+    color: white !important;
+}
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .navbar {
+    background-color: #222 !important;
+}
+
+/* signup */
+.dark-mode .box {
+    background-color: darkslategray;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* login */
+.form-container {
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    color: black;
+}
+
+.form-container{
+    
+    background-color: #cfd8d3 !important;
+}
+
+.dark-mode .form-container {
+    background-color: darkslategrey !important;
+    color: white !important;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}

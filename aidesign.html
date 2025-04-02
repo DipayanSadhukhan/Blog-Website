@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple and elegant blog website where users can explore and share blog posts.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="mode.css">
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="navstyle.css">
+    <link rel="stylesheet" href="aidesign.css">
+
+    <title>AI-Powered Design | Blogs.com</title>
+    
+</head>
+
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">BLOGS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categories
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Technology</a>
+                        <a class="dropdown-item" href="#">Health</a>
+                        <a class="dropdown-item" href="#">Business</a>
+                        <a class="dropdown-item" href="#">Travel</a>
+                        <a class="dropdown-item" href="#">Self-improvement</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/support.html">Support</a>
+                        <a class="dropdown-item" href="/writeforus.html">Write for us</a>
+                        <a class="dropdown-item" href="/contact.html">Contact Us</a>
+                    </div>
+                </li>
+
+                <li class="nav-item d-lg-none">
+                    <button id="login-mobile" class="btn btn-danger btn-block my-2">Login</button>
+                </li>
+                <li class="nav-item d-lg-none">
+                    <button id="signup-mobile" class="btn btn-danger btn-block">SignUp</button>
+                </li>
+            </ul>
+
+            <div class="d-flex align-items-center" style="margin: 8px 0">
+                <form class="d-flex">
+                    <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button id="search-btn" class="btn btn-outline-danger my-2 my-sm-0" type="button">Search</button>
+                </form>
+
+                <button id="toggle" class="btn btn-primary mx-1">Dark Mode</button>
+
+                <div class="d-none d-lg-flex">
+                    <button id="login" class="btn btn-danger mx-2">Login</button>
+                    <button id="signup" class="btn btn-danger">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="section">
+        <h2>AI-Powered Design</h2>
+        <p>AI-powered design refers to the use of artificial intelligence in the creative and design process, automating tasks, optimizing workflows, and generating innovative solutions. It enables designers to work more efficiently by leveraging machine learning, deep learning, and generative models.</p>
+    </div>
+
+    <div class="section">
+        <h2>Key Benefits</h2>
+        <p>The key benifits of Edge Computing is very vast . Some of the benifits describe below -</p>
+        <ul>
+            <li><strong>Automation:</strong> Speeds up repetitive design tasks.</li>
+            <li><strong>Personalization:</strong> Creates user-specific designs based on data insights.</li>
+            <li><strong>Efficiency:</strong> Reduces human workload and enhances productivity.</li>
+            <li><strong>Innovation:</strong> Generates unique and unexpected design solutions.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Use Cases</h2>
+        <p>AI-powered design is used in various applications, including:</p>
+        <ul>
+            <li>Graphic and Web Design</li>
+            <li>AI-Generated Art</li>
+            <li>User Experience (UX) Optimization</li>
+            <li>Automated Branding & Logo Creation</li>
+            <li>AI-Assisted Architecture & Interior Design</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>References</h2>
+        <p>If you have an interset to accure more information about "Edge Computing", visit <a href="https://en.wikipedia.org/wiki/Artificial_intelligence_in_design" target="_blank">Wikipedia - AI in Design</a>.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AI-Powered Design @<a href="/index.html">Blogs.com</a></p>
+    </footer>
+
+    <script src="login.js"></script>
+    <script src="signup.js"></script>
+    <script src="mode.js"></script>
+    <script src="search.js"></script>
+    <script src="mobile.js"></script>
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

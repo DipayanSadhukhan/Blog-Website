@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A simple and elegant blog website where users can explore and share blog posts.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="mode.css">
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="navstyle.css">
+
+    <title>About | Blogs.com</title>
+</head>
+
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">BLOGS</a>
+        <style>
+            .navbar-brand {
+                margin-left: 10px;
+            }
+        </style>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <style>
+                #navbarSupportedContent {
+                    justify-content: space-between;
+                }
+            </style>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categories
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Technology</a>
+                        <a class="dropdown-item" href="#">Health</a>
+                        <a class="dropdown-item" href="#">Business</a>
+                        <a class="dropdown-item" href="#">Travel</a>
+                        <a class="dropdown-item" href="#">Self-improvement</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/support.html">Support</a>
+                        <a class="dropdown-item" href="/writeforus.html">Write for us</a>
+                        <a class="dropdown-item" href="/contact.html">Contact Us</a>
+                    </div>
+                </li>
+
+                <li class="nav-item d-lg-none">
+                    <button id="login-mobile" class="btn btn-danger btn-block my-2">Login</button>
+                </li>
+                <li class="nav-item d-lg-none">
+                    <button id="signup-mobile" class="btn btn-danger btn-block">SignUp</button>
+                </li>
+            </ul>
+
+            <div class="d-flex align-items-center" style="margin: 8px 0">
+                <form class="d-flex">
+                    <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button id="search-btn" class="btn btn-outline-danger my-2 my-sm-0" type="button">Search</button>
+                </form>
+
+                <button id="toggle" class="btn btn-primary mx-1">Dark Mode</button>
+
+                <div class="d-none d-lg-flex">
+                    <button id="login" class="btn btn-danger mx-2">Login</button>
+                    <button id="signup" class="btn btn-danger">SignUp</button>
+                    <style>
+                        #signup {
+                            margin-right: 10px;
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <div id="f1" class="row featurette d-flex justify-content-center align-items-center">
+            <style>
+                #f1{
+                    margin-top: 7rem;
+                }
+            </style>
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Welcome to <a href="/index.html">Blogs.com</a> <span class="text-muted">Your ultimate destination for insightful, engaging, and diverse content.</span></h2>
+                <p class="lead"> We bring together passionate writers, experts, and storytellers to share ideas, experiences, and knowledge across various topics, from technology and lifestyle to personal development and beyond.<br><br>At Blogs.com, we believe that every story matters. Whether you’re here to learn something new, find inspiration, or simply enjoy a good read, our platform is designed to keep you informed and entertained.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid" src="pics/welcome.jpeg" alt="">
+
+            </div>
+        </div>
+        <div id="f2" class="row featurette d-flex justify-content-center align-items-center">
+            <style>
+                #f2{
+                    margin-top: 4rem;
+                }
+            </style>
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">We started <a href="/index.html">Blogs.com</a> in 2024 <span class="text-muted">To create a space where ideas, stories, and knowledge could be shared freely.</span></h2>
+                <p class="lead">What began as a small blogging platform has grown into a thriving community of writers, thinkers, and creators. We believe that every voice matters, and Blogs.com is here to amplify yours.<br><br> Our goal is to empower writers and connect readers with inspiring content from around the <a href="/login.html">Join us </a>as we continue to innovate and redefine digital storytelling.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="img-fluid" src="pics/started.jpeg" alt="">
+
+            </div>
+        </div>
+        <div id="f3" class="row featurette d-flex justify-content-center align-items-center">
+            <style>
+                #f3{
+                    margin-top: 4rem;
+                }
+            </style>
+            <div class="col-md-7">
+                <h2 class="featurette-heading">What We Offer at <a href="/index.html">Blogs.com</a> <span class="text-muted">It’ll blow your
+                        mind.</span></h2>
+                <p class="lead">At Blogs.com, we provide a dynamic platform where writers, readers, and creators come together to share ideas, knowledge, and experiences.<br>From personal blogs to in-depth guides, Blogs.com is home to diverse content. We make it easy for writers to publish and for readers to discover insightful stories.<br><br>Our platform is designed to be intuitive, engaging, and rewarding for everyone .</p>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid" src="pics/offer.jpeg" alt="">
+
+            </div>
+        </div>
+        <div id="f4" class="row featurette d-flex justify-content-center align-items-center">
+            <style>
+                #f4{
+                    margin-top: 4rem;
+                }
+            </style>
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">"Our Story" <span class="text-muted">The inspiration behind the platform .</span></h2>
+                <p class="lead"> <a href="/index.html">Blogs.com</a> started as a simple idea—creating a space where anyone could share their thoughts and stories with the world. Over time, we have grown into a thriving community of passionate writers and eager readers, and we’re just getting started!<br>Every great idea starts with a vision, and Blogs.com is no different. We began in 2024 with a simple yet powerful goal: to create a space where everyone’s voice matters. Whether you’re a seasoned writer, an aspiring blogger, or just someone with thoughts to share, we wanted to give you a platform to express yourself freely.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="img-fluid" src="pics/pic2.avif" alt="">
+
+            </div>
+        </div>
+        <div id="f5" class="row featurette d-flex justify-content-center align-items-center">
+            <style>
+                #f5{
+                    margin-top: 4rem;
+                }
+            </style>
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Why Choose <a href="/index.html">Blogs.com</a> ? <span class="text-muted">What makes Blogs.com different from other blogging platforms ?</span></h2>
+                <p class="lead">Unlike other platforms, Blogs.com puts content creators first, offering tools for easy publishing, reader engagement, and content monetization. Whether you’re here to write or explore, our platform ensures a seamless and rewarding experience.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid" src="pics/different.jpeg" alt="">
+
+            </div>
+        </div>
+        <div id="f6" class="row featurette d-flex justify-content-center align-items-center">
+            <style>
+                #f6{
+                    margin-top: 4rem;
+                }
+            </style>
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading"> <a href="/index.html"> Our Mission</a> - <span class="text-muted">We aim to bridge the gap between insightful writers and curious readers.</span></h2>
+                <p class="lead">At Blogs.com, our mission is to empower voices, foster creativity, and build a global community of thinkers, storytellers, and innovators. We believe that everyone has a story to tell, an idea to share, or knowledge to impart, and we are here to provide the perfect platform for it.<br><br>Here, we believe in the power of words to inspire, educate, and connect people worldwide. Join us in creating a space where ideas thrive and stories come to life .</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="img-fluid" src="pics/ourmission.jpeg" alt="">
+
+            </div>
+        </div>
+        <div id="f7" class="row featurette d-flex justify-content-center align-items-center">
+            <style>
+                #f7{
+                    margin-top: 4rem;
+                }
+            </style>
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Join the Journey <span class="text-muted">We’re just getting started, and the best is yet to come!</span></h2>
+                <p class="lead"><a href="/login.html">Join us</a> in building a vibrant community of thinkers and creators. Whether you want to read, write, or explore, Blogs.com is your go-to destination for meaningful content.<br><br>Start your journey today – <a href="/writeforus.html">Create Your Blog .</a></p>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid" src="pics/join.jpeg" alt="">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">Stay Inspired, Stay Informed</h5>
+                <p class="card-text">Explore insightful articles, tech trends, and personal experiences. Keep learning,
+                    keep growing!</p>
+                <a href="/about.html" class="btn btn-danger">Go to Top</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+    <script src="signup.js"></script>
+    <script src="mode.js"></script>
+    <script src="search.js"></script>
+    <script src="mobile.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
