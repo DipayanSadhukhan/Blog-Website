@@ -32,3 +32,4 @@ Welcome to my **Blog Website**! This is a responsive and interactive blog platfo
 Feel free to connect with me for any suggestions or feedback!
 
 🔗 **GitHub**: [Dipayan Sadhukhan](https://github.com/DipayanSadhukhan)
+🔗 **LinkedIn**: [Dipayan Sadhukhan](https://www.linkedin.com/in/dipayan-sadhukhan-0b295a352/)
