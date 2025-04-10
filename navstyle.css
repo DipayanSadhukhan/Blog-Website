@@ -33,3 +33,14 @@
 #toggle {
     white-space: nowrap;
 }
+
+.homePage,
+.aboutPage{
+    cursor: pointer;
+}
+
+.contactPage,
+.writeForUsPage,
+.supportPage{
+    cursor: pointer;
+}

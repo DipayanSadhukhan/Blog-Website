@@ -19,6 +19,10 @@
     margin-top: 10px;
 }
 
+.faqs p{
+    font-size: small;
+}
+
 .makebox{
     padding: 3rem;
     display: flex;
@@ -29,7 +33,7 @@
 }
 .dark-mode .makebox{
     color: white;
-    background-color:darkslategrey;
+    background-color:#1517176e;
 }
 
 @media (max-width:800px){
