@@ -3,6 +3,7 @@ const aboutPage = document.getElementsByClassName("aboutPage");
 const contactPage = document.getElementsByClassName("contactPage");
 const supportPage = document.getElementsByClassName("supportPage");
 const writeForUsPage = document.getElementsByClassName("writeForUsPage");
+const logInPage = document.getElementsByClassName("logInPage");
 const Edge_computing_Page = document.getElementsByClassName("Edge_computing_Page");
 const AI_Design_Page = document.getElementsByClassName("AI_Design_Page");
 const wikipedia_AI_Design = document.getElementsByClassName("wikipedia_AI_Design");
@@ -49,6 +50,11 @@ Array.from(supportPage).forEach((element) => {
 Array.from(writeForUsPage).forEach((element) => {
     element.addEventListener("click", () => {
         window.location.href = "writeforus.html";
+    })
+})
+Array.from(logInPage).forEach((element) => {
+    element.addEventListener("click", () => {
+        window.location.href = "login.html";
     })
 })
 Array.from(Edge_computing_Page).forEach((element) => {

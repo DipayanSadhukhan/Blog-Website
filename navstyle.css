@@ -41,6 +41,28 @@
 
 .contactPage,
 .writeForUsPage,
-.supportPage{
+.supportPage,
+.logInPage{
     cursor: pointer;
+}
+
+#blueAs_anchor,
+#makeItBlue{
+    color: #3c72fb;
+}
+
+.Edge_computing_Page,
+.AI_Design_Page,
+#createBlog,
+.logInPage,
+#makingBlue{
+    color: #3c72fb !important;
+}
+
+.Edge_computing_Page:hover,
+.AI_Design_Page:hover,
+#createBlog:hover,
+.logInPage:hover,
+#makingBlue:hover{
+    border-bottom: 3px solid #3c72fb;
 }
